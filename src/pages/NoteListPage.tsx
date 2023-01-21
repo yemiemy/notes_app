@@ -12,7 +12,7 @@ const NoteListPage = () => {
   }, [])
 
   let getNotes = async () => {
-    let response = await fetch('http://localhost:8000/notes/')
+    let response = await fetch('https://f83d-90-220-73-100.eu.ngrok.io/notes/')
     let data = await response.json()
     setNotes(data)
   }

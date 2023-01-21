@@ -15,14 +15,14 @@ const NotePage:React.FC = () => {
 
     let getNote = async () => {
       if (note_id === 'new') return
-      let response = await fetch(`http://localhost:8000/notes/${note_id}`)
+      let response = await fetch(`https://f83d-90-220-73-100.eu.ngrok.io/notes/${note_id}`)
       let data = await response.json()
       setNote(data)
     }
 
     const createNote = async () => {
       await fetch(
-        `http://localhost:8000/notes/`, {
+        `https://f83d-90-220-73-100.eu.ngrok.io/notes/`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -34,7 +34,7 @@ const NotePage:React.FC = () => {
 
     const updateNote = async () => {
       await fetch(
-        `http://localhost:8000/notes/${note_id}`, {
+        `https://f83d-90-220-73-100.eu.ngrok.io/notes/${note_id}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json'
@@ -46,7 +46,7 @@ const NotePage:React.FC = () => {
 
     const deleteNote = async () => {
       await fetch(
-        `http://localhost:8000/notes/${note_id}`, {
+        `https://f83d-90-220-73-100.eu.ngrok.io/notes/${note_id}`, {
           method: 'DELETE',
           headers: {
             'Content-Type': 'application/json'
