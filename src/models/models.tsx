@@ -1,5 +1,5 @@
 export interface Note {
-    id?: number
+    id: number
     body?: string
     created?: string
     updated?: string

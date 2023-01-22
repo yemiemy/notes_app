@@ -7,7 +7,7 @@ const NotePage:React.FC = () => {
     let note_id = useParams().id
     let navigate = useNavigate();
 
-    let [note, setNote] = useState<Note>()
+    let [note, setNote] = useState<Note>({id: 0})
 
     useEffect(() => {
       getNote()
@@ -15,14 +15,14 @@ const NotePage:React.FC = () => {
 
     let getNote = async () => {
       if (note_id === 'new') return
-      let response = await fetch(`https://f83d-90-220-73-100.eu.ngrok.io/notes/${note_id}`)
+      let response = await fetch(`https://3786-90-220-73-100.eu.ngrok.io/notes/${note_id}`)
       let data = await response.json()
       setNote(data)
     }
 
     const createNote = async () => {
       await fetch(
-        `https://f83d-90-220-73-100.eu.ngrok.io/notes/`, {
+        `https://3786-90-220-73-100.eu.ngrok.io/notes/`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -30,11 +30,12 @@ const NotePage:React.FC = () => {
           body: JSON.stringify({...note, updated: new Date()}) 
         }
       )
+      window.location.assign('/')
     }
 
     const updateNote = async () => {
       await fetch(
-        `https://f83d-90-220-73-100.eu.ngrok.io/notes/${note_id}`, {
+        `https://3786-90-220-73-100.eu.ngrok.io/notes/${note_id}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json'
@@ -46,7 +47,7 @@ const NotePage:React.FC = () => {
 
     const deleteNote = async () => {
       await fetch(
-        `https://f83d-90-220-73-100.eu.ngrok.io/notes/${note_id}`, {
+        `https://3786-90-220-73-100.eu.ngrok.io/notes/${note_id}`, {
           method: 'DELETE',
           headers: {
             'Content-Type': 'application/json'

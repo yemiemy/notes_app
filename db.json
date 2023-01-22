@@ -2,13 +2,53 @@
   "notes": [
     {
       "body": "Some things to note:\n\n- List 1\n- List 2\n- List 3\n- List 4\n- List 5",
-      "updated": "2023-01-20T23:48:55.612Z",
+      "updated": "2023-01-22T06:49:11.643Z",
       "id": 1
     },
     {
-      "body": "ahhh\n",
-      "updated": "2023-01-20T23:38:56.143Z",
-      "id": 2
+      "body": "New note here we\n\nTest 1\nTest 2",
+      "updated": "2023-01-21T21:45:26.361Z",
+      "id": 3
+    },
+    {
+      "body": "Looks like it works now ",
+      "updated": "2023-01-21T21:46:02.416Z",
+      "id": 4
+    },
+    {
+      "body": "My guy wey sabii oporrr 😍😍",
+      "updated": "2023-01-22T06:49:28.447Z",
+      "id": 5
+    },
+    {
+      "body": "Mine isn’t working ",
+      "updated": "2023-01-22T06:49:47.383Z",
+      "id": 6
+    },
+    {
+      "body": "Ohh it is but it’s not like updating immediately ",
+      "updated": "2023-01-22T06:50:12.254Z",
+      "id": 7
+    },
+    {
+      "body": "I get it Asper I only see any previous note after adding a new note, Dyg?\n\n",
+      "updated": "2023-01-22T15:48:56.546Z",
+      "id": 8
+    },
+    {
+      "body": "Adding a new note should go to the top no?",
+      "updated": "2023-01-22T15:49:58.245Z",
+      "id": 9
+    },
+    {
+      "id": 10,
+      "body": "new one",
+      "updated": "2023-01-22T15:58:22.298Z"
+    },
+    {
+      "id": 13,
+      "body": "One more time feels like its lagging updated now",
+      "updated": "2023-01-22T16:08:52.982Z"
     }
   ]
 }

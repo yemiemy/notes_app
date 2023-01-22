@@ -12,9 +12,16 @@ const NoteListPage = () => {
   }, [])
 
   let getNotes = async () => {
-    let response = await fetch('https://f83d-90-220-73-100.eu.ngrok.io/notes/')
+    let response = await fetch('https://3786-90-220-73-100.eu.ngrok.io/notes/')
     let data = await response.json()
-    setNotes(data)
+    
+    setNotes(
+      data.sort((a:Note, b:Note) => 
+        (a.id > b.id) 
+          ? -1 
+          : ((b.id > a.id) ? 1 : 0)
+      )
+    )
   }
 
   return (
